@@ -1,0 +1,10 @@
+let arr = [32,54,62,71,43];
+console.log(arr);
+console.log(`first: ${arr[0]}`);
+console.log(`last: ${arr[arr.length - 1]}`);
+arr.push(80);
+console.log(`last: ${arr[arr.length - 1]}`);
+arr.shift();
+console.log(arr.includes(45));
+console.log(arr.slice(1,5));
+console.log(arr);

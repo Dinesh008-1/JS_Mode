@@ -10,14 +10,14 @@ const employee2 = {
     salary: 60089
 };
 
-// function introduce(age){
-//     console.log(`I'm ${this.name} from ${this.city} and ${age} years old` );
-// }
+function introduce(age){
+    console.log(`I'm ${this.name} from ${this.city} and ${age} years old` );
+}
 
-// introduce.call(employee1,18);
-// introduce.call(employee2,44);
-// introduce.apply(employee1,[50]);
-// introduce.apply(employee2,[34]);
+introduce.call(employee1,18);
+introduce.call(employee2,44);
+introduce.apply(employee1,[50]);
+introduce.apply(employee2,[34]);
 
 function calculateSalary(bonus, deductions) {
     return this.salary + bonus - deductions;
