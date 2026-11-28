@@ -1,0 +1,14 @@
+const inputSelector = document.querySelector("#itemInput");
+const buttonSelector = document.querySelector("#addButton");
+const listSelector = document.querySelector("#itemList");
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+li1.textContent = "Mobile";
+li2.textContent = "Laptop";
+li3.textContent = "Tablet";
+listSelector.append(li1);
+listSelector.append(li2);
+listSelector.append(li3);
+li2.remove();
+console.log(listSelector.children.length);
